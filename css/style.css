@@ -82,6 +82,31 @@ p {
 
 }
 
+.di-tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.di-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: none;
+    color: #443737;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+  
+  .di-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 
 
 /* hero animation */
