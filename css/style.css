@@ -52,11 +52,19 @@ p {
 
 .btn-main {
     background-color: #443737;
+    width: 280px;
     font-family: 'Work Sans', sans-serif !important;
     font-weight: 800;
     color: #fffcf4;
     margin-top: 3rem;
+    transition: 0.7s;
 
+
+}
+
+.btn-main:hover {
+    background-color: #B29C9C;
+    transition: 0.7s;
 }
 
 /* nav */
