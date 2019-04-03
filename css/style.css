@@ -85,16 +85,24 @@ p {
 .di-tooltip {
     position: relative;
     display: inline-block;
+    margin: 5px;
   }
+
+.tooltiptext {
+  margin-right: 10px;
+}
   
 .di-tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+    width: 110px;
     background-color: none;
     color: #443737;
-    text-align: center;
-    border-radius: 6px;
+    text-align: right;
     padding: 5px 0;
+    font-family: 'Work Sans', sans-serif;
+
     
     /* Position the tooltip */
     position: absolute;
@@ -105,7 +113,11 @@ p {
   
   .di-tooltip:hover .tooltiptext {
     visibility: visible;
+    opacity:1;
+
+
 }
+
 
 
 
